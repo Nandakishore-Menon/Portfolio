@@ -1,0 +1,117 @@
+@import url(./fonts.css);
+@import url(./partials/_variables.css);
+@import url(./partials/_global.css);
+/* for navigation menu*/
+.harea .main_menu .navbar .navbar-brand{
+	padding:0 2rem 0 5 rem;
+}
+.harea .main_menu .navbar{
+	padding:1rem 15rem;
+}
+.harea .main_menu .nav-item .nav-link{
+	font-family: var(--roboto);
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 1.7rem;
+	color: var(--title-color); 
+}
+
+.harea .main_menu .navbar-nav .active a{
+	background: var(--back-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+.harea .main_menu .navbar-nav a:hover{
+	background: var(--back-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 4rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image>img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.site-main .about{
+	padding: 8rem 5rem;
+}
+
+.site-main .about h2>span{
+	display: block;
+	font:normal bold 49px/60px var(--roboto);
+	letter-spacing: 15px;
+}
+
+.site-main .about .about-title .paragraph>p{
+	padding: 4rem 0;
+}
+
+.site-main .services{
+	padding: 7rem 2rem;
+}
+
+.site-main .services .service-title{
+	padding: 0rem 14rem;
+}
+
+.site-main .services .service-title h1{
+	font-size: 35px;
+}
+
+.site-main >.services .serve{
+	background: rgba(255, 236, 235,0.7);
+	padding: 2rem 0;
+	width:16 rem;
+	margin:5rem .5rem;
+	transition: box-shadow 0.5s ease;
+}
+.site-main >.services .serve:hover{
+	box-shadow: var(--box-shadow);
+}
+
+footer.footer-area{
+	padding: 5rem 0 0rem;
+	background: url(../img/footer-image.png)no-repeat;
+}
+
+footer.footer-area .social h5{
+	font: normal 500 23px/30px var(--roboto);
+}
+
+footer.footer-area .social a>i{
+	font-size: 22px;
+	padding:2rem;
+	color: var(--border-color);
+}
+
+footer.footer-area .social a:hover>i{
+	color:var(--primary-color);
+}
+
+
