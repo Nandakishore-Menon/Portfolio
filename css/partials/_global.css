@@ -67,4 +67,26 @@ p.para{
     z-index: 999;
     transition: background 2s ease;
 }
+.topbutton
+{	font-size: 50px/70px;
+	height:70px; width: 70px;
+	font: normal 500 16px/20px var(--roboto);
+	border:3px solid transparent;
+	  display: none;
+	  position:fixed;
+	  bottom: 50px;
+	  right: 50px;
+	  z-index: 99;
+	  cursor: pointer;
+	  border-radius: 50%;
+	background: var(--back-color);
+	background-clip: padding-box;
+	color: whitesmoke;
+	box-shadow: var(--box-shadow);
+}
 
+.topbutton:hover{
+	background: whitesmoke;
+	border-color: var(--back-color);
+	color:#FF4F58FF;
+}
