@@ -10,6 +10,33 @@
  
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/responsive.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+ <style>
+body, html, .main {
+  height: 100%;
+}
+
+section {
+  min-height: 100%;
+}
+</style>
 	
 </head>
 <body>
