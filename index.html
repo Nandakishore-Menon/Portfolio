@@ -10,7 +10,7 @@
  
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/responsive.css">
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
 
@@ -41,10 +41,10 @@ section {
 </head>
 <body>
 <!-- -------------Header---------------------------------------- -->
-<header class="harea">
+<header class="harea"  id="navi">
 	<div class="main_menu">
 		<nav class="navbar navbar-expand-lg navbar-light">
-		  <a class="navbar-brand" href="#"><img src="./img/logo.png" height=100px width=110px></a>
+		  <a class="navbar-brand" href="#"><img src="./img/logo.png" height=70px width=80px></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -64,8 +64,8 @@ section {
 		        <a class="nav-link" href="#serv">Services</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#contact">Contact me</a>
-		      </li>
+		        <a class="nav-link" href="#contact">Contacts</a>
+              </li>
 		    </ul>
 		  </div>
 		</nav>	
@@ -111,7 +111,7 @@ section {
         			<div class="col-lg-6 col-md-12">
         				
         				<h2 class="text-uppercase pt-5">
-        					<span>More</span>
+        					<span>More </span>
         					<span>about</span>
         					<span>me?</span>
         				</h2>
@@ -212,7 +212,7 @@ section {
         					<div class="serve">
         					<a href="https://github.com/Nandakishore-Menon/Sliding_puzzle" target="_blank">
         						<div class="services-img text-center py-4">
-        							<img src="./img/service1.png" width=200px height=150px alt="services-1">
+        							<img src="./img/slide.png" width=150px height=150px alt="services-1">
         						</div>
         					</a>
         						<div class="card-body text-center">
@@ -229,7 +229,7 @@ section {
         					<div class="serve">
         					<a href="https://github.com/Nandakishore-Menon/Socket_quiz_python" target="_blank">
         						<div class="services-img text-center py-4">
-        							<img src="./img/service2.png" width=200px height=150px alt="services-1">
+        							<img src="./img/quiz.png" width=150px height=150px alt="services-1">
         						</div>
         					</a>
         						<div class="card-body text-center">
@@ -263,7 +263,7 @@ section {
 			</div>
 			<div class="copyright text-center">
 				<p class="para">
-					Copyright &copy;2020 All rights reserved....just kidding
+					Copyright &copy;2020 All rights reserved
 				</p>
 			</div>
 		</div>
@@ -272,7 +272,22 @@ section {
 
 <!-- -------------Content--------------------------------------- -->
 	<div class="class1"></div>
+    <script src="./js/jquery.3.4.1.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
+    <script>
+    window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navi");
+var sticky = navbar.offsetTop+10;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("fixed")
+  } else {
+    navbar.classList.remove("fixed");
+  }
+}
+    
+    </script>
 </body>
 </html>
