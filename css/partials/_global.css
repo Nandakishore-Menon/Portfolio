@@ -57,7 +57,7 @@ p.para{
 
 }
 
-.navbar_fixed{
+.fixed{
     position: fixed;
     width: 100%;
     top: -1px;
