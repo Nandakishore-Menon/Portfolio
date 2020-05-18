@@ -46,7 +46,7 @@
 }
 
 .site-main .site-banner .site-title h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .site-main .site-banner .site-title h4{
@@ -97,7 +97,7 @@
 
 footer.footer-area{
 	padding: 5rem 0 0rem;
-	background: url(../img/footer-image.png)no-repeat;
+	background-color: #faf3f2 ;
 }
 
 footer.footer-area .social h5{
@@ -113,5 +113,6 @@ footer.footer-area .social a>i{
 footer.footer-area .social a:hover>i{
 	color:var(--primary-color);
 }
-
-
+#mail{
+	padding-top: 2rem; 
+}
