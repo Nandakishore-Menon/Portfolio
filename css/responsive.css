@@ -1,21 +1,33 @@
-@media only screen and (max-width: 340px){
+@media only screen and (max-width: 400px){
     .harea .main-menu .navbar,
     .harea .main-menu .navbar .navbar-brand,
-    .site-main .services,
+    .site-main .services .serve,
     {
         padding: 0%;
         margin: 0%;
     }
 
     .site-main .site-banner .site-title h1{
-        font-size: 41px;
+        font-size: 30px;
     }
 
 
     .site-main > .services.serve{
-        width: 13rem;
+        width: 15rem;
+    }
+    .row
+    {
+        width:450px;
     }
 
+    #contact{
+        padding: 0;
+        width:600px;
+    }
+    .site-main .services .service-title{
+    padding:0;
+    width: 600px;
+    }
 }
 
 
@@ -28,7 +40,10 @@
     .site-main .about .about-title p{
         padding: 0%;
     }
-
+    .site-main .services .service-title{
+    padding:0;
+    width: 1200px;
+    }
 }
 
 
